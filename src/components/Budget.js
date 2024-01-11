@@ -13,7 +13,7 @@ const Budget = () => {
         val = parseInt(val);
         if(val > 20000)
         {
-            alert('The value can not be more than 20,000');
+            alert('The value cannot be more than 20,000');
         }
         if(val <= totalSpent)
         {
@@ -37,7 +37,7 @@ const Budget = () => {
                 id='budget'
                 value={Budget}
                 style={{size: 10}}
-                step='10'
+                step='50'
                 max='20000'
                 onChange={event=>changeBudget(event.target.value)}>
                 </input>
